@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+/* Navigation Bar Styles */
+/* Add this at the top of the CSS file */
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffc107; /* Change to your preferred hover color */
+  }
+  
+  /* Highlight the Active Tab */
+  nav a.active {
+    color: #ffc107; /* Change to your preferred active tab color */
+    border-bottom: 2px solid #ffc107; /* Add a bottom border to the active tab */
+  }
+  
