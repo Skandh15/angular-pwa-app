@@ -4,6 +4,7 @@ import { ServiceWorkerModule } from '@angular/service-worker'; // Import this li
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { VoiceService } from './voice.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }) // Add this line
   ],
-  providers: [],
+  providers: [VoiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
